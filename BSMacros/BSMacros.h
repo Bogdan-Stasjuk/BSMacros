@@ -24,6 +24,10 @@
 
 #define BSAppDelegate [UIApplication sharedApplication].delegate
 
+#pragma mark - NSFileManager
+
+#define BSDefaultFileManager [NSFileManager defaultManager]
+
 #pragma mark - UIScreen
 
 #define BSScreenBounds [UIScreen mainScreen].bounds
