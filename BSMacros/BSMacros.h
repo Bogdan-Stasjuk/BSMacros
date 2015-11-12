@@ -17,6 +17,7 @@
   #define BSDDLogWarn(fmt, ...)
 #endif
 
+#define NSLogx(fmt, ...)
 #define BSLogCap(fmt, ...)
 #define BSDDLogError(fmt, ...) DDLogError((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
