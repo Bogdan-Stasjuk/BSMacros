@@ -8,7 +8,7 @@
 #pragma mark - Logging
 
 #ifdef DEBUG
-  #define BSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+  #define BSLog(fmt, ...) NSLog((@"%@:%d %s: " fmt), ((NSString *)(@__FILE__)).lastPathComponent, __LINE__, __PRETTY_FUNCTION__, ##__VA_ARGS__)
   #define BSDDLogVerbose(fmt, ...) DDLogVerbose((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
   #define BSDDLogWarn(fmt, ...) DDLogWarn((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
