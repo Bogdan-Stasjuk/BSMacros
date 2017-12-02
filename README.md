@@ -11,7 +11,7 @@ This macros have been tested back to iOS 7.0.
 Installation
 ============
 
-__Cocoapods__: `pod 'BSMacros'`<br />
+__CocoaPods__: `pod 'BSMacros'`<br />
 __Manual__: Copy the __BSMacros__ folder in your project<br />
 
 Import header in your project. .pch is a good place ;)
